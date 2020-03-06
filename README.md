@@ -6,7 +6,7 @@ This tool search for SSRF using predefined settings in different parts of a requ
 
 Rename __example.app-settings.conf__ to __app-settings.conf__ and adjust settings. The most important setting is the callback url. I 
 recommend to use burp collaborator.
-Then you can add your urls to config/url-to-test.txt. Here the script accepts domains as well as urls with path and queryparameters.
+Then you can add your urls to config/url-to-test.txt. Here the script accepts domains as well as urls with path and query parameters.
 If you like you can add your own cookies to config/cookie-jar.txt and add additional headers for your requests. The brute force list
 which is used in post and get requests is currently small, I dont thing adding 2000 parameters is smart. We should focus on those
 which have the highest possibility to be vulnerable. If you don't think so: just add your own!
@@ -62,7 +62,7 @@ add your cookies.
 
 ### Settings
 
-The app-settings.conf defines the program workflow. Its the most important file, you can activate/deactive different
+The app-settings.conf defines the program workflow. Its the most important file, you can activate/deactivate different
 modules there.
 
 #### Basic settings
@@ -86,7 +86,7 @@ between 2 and 6 seconds.
 __MaxThreads__
 
 The more threads, the faster the script is - but since we are dealing with a lot of connections I usually keep this below
-10 on my personal computer and arround 30 on my VPS.
+10 on my personal computer and around 30 on my VPS.
 
 __ShuffleTests__
 
